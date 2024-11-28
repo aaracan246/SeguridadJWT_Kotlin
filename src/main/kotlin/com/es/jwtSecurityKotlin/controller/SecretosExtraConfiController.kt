@@ -5,15 +5,13 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-@RequestMapping("/rutas_protegidas")
-class RutaProtegidaController {
+@RequestMapping("/secretos_extra_confidenciales")
+class SecretosExtraConfiController {
 
 
-    @GetMapping("/recurso1")
+    @GetMapping("/ficha1")
     fun getRecursoProtegidoUno () : String {
-        return "Este recurso sólo puede ser accedido por usuarios registrados en la BDD \uD83E\uDD75"
+        return "Este recurso sólo puede ser accedido por el alto mando del Gobierno de ESÑAPA registrados en la BDD \uD83E\uDD75"
     }
-
-
 
 }
