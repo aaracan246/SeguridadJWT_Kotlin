@@ -14,4 +14,8 @@ class SecretosExtraConfiController {
         return "Este recurso sólo puede ser accedido por el alto mando del Gobierno de ESÑAPA registrados en la BDD \uD83E\uDD75"
     }
 
+    @GetMapping("/ficha2")
+    fun getRecursoProtegidoDos () : String {
+        return "Este recurso sólo puede ser accedido por todos los registrados en la BDD \uD83E\uDD75"
+    }
 }
